@@ -36,7 +36,7 @@
                     </li>                   
                 </router-link>
 
-                <router-link @click="toggleMenu" class="fs-5" to="/about">
+                <div @click="scrollToAboutUs" class="fs-5 fw-bold">
                     <li  id="option" class="d-flex justify-content-start align-items-center border border-dark border-bottom-1 border-top-0 border-end-0 border-start-0">
                         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-people-fill m-3 mt-0 mb-0" viewBox="0 0 16 16">
                            <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
@@ -44,9 +44,9 @@
 
                         <span>{{ $t('NavBar.about') }}</span>
                     </li>                   
-                </router-link>
+                </div>
 
-                <router-link @click="toggleMenu" class="fs-5" to="/contacts">
+                <div @click="scrollToContacts" class="fs-5 fw-bold">
                     <li  id="option" class="d-flex justify-content-start align-items-center border-0">
                         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-wechat m-3 mt-0 mb-0" viewBox="0 0 16 16">
                            <path d="M11.176 14.429c-2.665 0-4.826-1.8-4.826-4.018 0-2.22 2.159-4.02 4.824-4.02S16 8.191 16 10.411c0 1.21-.65 2.301-1.666 3.036a.32.32 0 0 0-.12.366l.218.81a.6.6 0 0 1 .029.117.166.166 0 0 1-.162.162.2.2 0 0 1-.092-.03l-1.057-.61a.5.5 0 0 0-.256-.074.5.5 0 0 0-.142.021 5.7 5.7 0 0 1-1.576.22M9.064 9.542a.647.647 0 1 0 .557-1 .645.645 0 0 0-.646.647.6.6 0 0 0 .09.353Zm3.232.001a.646.646 0 1 0 .546-1 .645.645 0 0 0-.644.644.63.63 0 0 0 .098.356"/>
@@ -55,7 +55,7 @@
 
                         <span>{{ $t('NavBar.contacts') }}</span>
                     </li>                   
-                </router-link>  
+                </div>   
             </ul>      
 
         </nav>
@@ -84,7 +84,19 @@ export default{
     toggleIcon() {
       this.showBar = !this.showBar;
       this.showX = !this.showX;
-    },    
+    },   
+    
+    scrollToAboutUs() {
+      const aboutUsContainer = document.querySelector('#curve-above')
+      aboutUsContainer.scrollIntoView({ behavior: 'smooth' });  
+      this.toggleMenu();
+    },
+
+    scrollToContacts() {
+      const contactsContainer = document.querySelector('#contacts-container')
+      contactsContainer.scrollIntoView({ behavior: 'smooth' });  
+      this.toggleMenu();
+    },
 
     },
     mounted() {

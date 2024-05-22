@@ -33,17 +33,17 @@
                         
 
         </div>        
-        <span class="fs-2 mt-5">Ou preencha o formulário</span>
+        <span class="fs-2 mt-5">{{ $t('Home.fill_the_form') }}</span>
 
         <form id="form" class="col-10 col-md-9 col-lg-7 pt-5" method="POST">
 
             <div class="d-flex flex-column flex-md-row align-items-center col-12" id="double-fields">
                 <div class="mt-4 col text-start fs-5">
-                    <label for="name">Name</label>
+                    <label for="name">{{ $t('Home.name') }}</label>
                     <input id="name-field" type="text" class="form-control" minlength="3" required>
                 </div>
                 <div class="mt-4 col text-start fs-5">
-                    <label for="phone">Phone</label>
+                    <label for="phone">{{ $t('Home.phone') }}</label>
                     <input id="phone-field" type="number" class="form-control" pattern="[0-9]{3,12}" minlength="3" required>
                 </div>
             </div>
@@ -53,11 +53,11 @@
                 <input type="email" class="form-control" required>
             </div>
             <div class="mt-4 form-group text-start fs-5">
-                <label for="message">Message</label>
+                <label for="message">{{ $t('Home.message') }}</label>
                 <textarea class="form-control" type="text" rows="3" minlength="10" required></textarea>
             </div>
             <div class="mt-5 d-flex justify-content-center justify-content-md-end align-items-center">
-                <button type="submit" class="fs-5 mt-5">Submit</button>
+                <button type="submit" class="fs-5 mt-5">{{ $t('Home.submit') }}</button>
             </div>            
         </form> 
     </section>  
@@ -137,7 +137,7 @@ button {
     padding: 10px 0;
     width: 220px;
     border-radius: 50px;
-    border: none;
+    border: none !important;
 }
 
 @media(max-width: 768px) { 

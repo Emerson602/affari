@@ -5,14 +5,18 @@
           <h1 id="title" class="text-start fs-1 m-sm-1 mt-0 mb-0">Affari</h1>
           <h2 class="text-start fs-1 m-sm-1 mt-0 mb-0">development</h2>
         </div>        
-        <p class="text-start text-sm-center mt-3 mt-md-5 fs-4 p-4 pt-0 pb-0">{{ $t('Home.slogan') }}</p>
-        <button class="m-auto mt-5 fs-4">{{ $t('Home.btn_contact') }}</button>
+        <p class="text-start text-sm-center mt-3 mt-md-5 fs-4 p-4 pt-0 pb-0">{{ $t('Home.slogan') }}</p> 
+
+        <a href="https://api.whatsapp.com/send?phone=5582993975054" target="_blank">
+            <button class="m-auto mt-5 fs-5">{{ $t('Home.btn_contact') }}</button>
+        </a> 
+                
     </div>
     <div id="curve-above" class="col-12">
       <div></div>
     </div>
 
-    <div id="info-1" class="d-flex flex-column justify-content-center align-items-center pb-5 pt-5">
+    <div id="about-us" class="d-flex flex-column justify-content-center align-items-center pb-5 pt-5">
 
         <h2 class="fs-1 col-11 mt-5 mb-5 lh-5">{{ $t('Home.info_1_title') }}</h2>
 
@@ -39,61 +43,54 @@
     <div id="info-2">
 
         <div class="col-12">
-          <h2 class="fs-1 col-8 col-sm-10 m-auto">Por que ter um site institucional ?</h2>
+          <h2 class="fs-1 col-8 col-sm-10 m-auto">{{ $t('Home.info_2_title') }}</h2>
         </div>
 
         <div id="text-container-2" class="mt-5 m-auto d-flex justify-content-center align-items-center flex-column p-4 pt-5 rounded">
-          <p class="fs-4 text-start">
-            Com o crescimento do mundo digital, a primeira coisa que um cliente faz
-             quando precisa de um serviço ou produto é pesquisar online. Se a sua empresa
-              não está presente nas redes de busca, você está perdendo uma grande 
-              oportunidade de conquistar novos clientes e aumentar suas vendas.
-          </p>
-          <p class="fs-4 text-start mt-2">
-            O site institucional é mais do que um simples cartão de visita, 
-            ele é a sua "casa virtual" na internet, um espaço dedicado a apresentar 
-            sua marca, produtos, serviços, valores e missão ao seu público-alvo.
-          </p>
-          <p class="fs-4 text-start mt-2">
-            Investir em um site institucional é fundamental para o sucesso do seu negócio no mundo digital
-          </p>          
+
+          <p class="fs-4 text-start">{{ $t('Home.info_2_txt_1') }}</p>             
+          
+          <p class="fs-4 text-start mt-2">{{ $t('Home.info_2_txt_2') }}</p>        
+          
+          <p class="fs-4 text-start mt-2">{{ $t('Home.info_2_txt_3') }}</p>         
+                    
         </div>      
         
-
+        
         <div id="cards-container" class="mt-5 mb-5 d-flex justify-content-center align-items-center flex-wrap"> 
 
           <div class="d-flex flex-column justify-content-start align-items-center m-4 rounded p-3 pt-4">
             <img src="../assets/card-1.webp">            
-            <span class="fs-5 col-11 mt-4">Maximize sua base de clientes</span>
+            <span class="fs-5 col-11 mt-4">{{ $t('Home.txt_card_1') }}</span>
           </div>
           <div class="d-flex flex-column justify-content-start align-items-center m-4 rounded p-3 pt-4">
             <img src="../assets/card-2.webp"> 
-            <span class="fs-5 col-11 mt-4">Aumente suas vendas</span>
+            <span class="fs-5 col-11 mt-4">{{ $t('Home.txt_card_2') }}</span>
           </div>
           <div class="d-flex flex-column justify-content-start align-items-center m-4 rounded p-3 pt-4">
             <img src="../assets/card-3.webp"> 
-            <span class="fs-5 col-11 mt-4">Fortaleça sua presença online.</span>
+            <span class="fs-5 col-11 mt-4">{{ $t('Home.txt_card_3') }}</span>
           </div> 
           <div class="d-flex flex-column justify-content-start align-items-center m-4 rounded p-3 pt-4">
             <img src="../assets/card-4.webp"> 
-            <span class="fs-5 col-11 mt-4">Divulgue serviços e produtos</span>
+            <span class="fs-5 col-11 mt-4">{{ $t('Home.txt_card_4') }}</span>
           </div>  
           <div class="d-flex flex-column justify-content-start align-items-center m-4 rounded p-3 pt-4">
             <img src="../assets/card-5.webp"> 
-            <span class="fs-5 col-11 mt-4">Impulsionar sua marca</span>
+            <span class="fs-5 col-11 mt-4">{{ $t('Home.txt_card_5') }}</span>
           </div>     
           <div class="d-flex flex-column justify-content-start align-items-center m-4 rounded p-3 pt-4">
             <img src="../assets/card-6.webp"> 
-            <span class="fs-5 col-11 mt-4">Melhore os seus resultados</span>
+            <span class="fs-5 col-11 mt-4">{{ $t('Home.txt_card_6') }}</span>
           </div> 
-
+          
       </div>
-      <button class="fs-4 mt-5">Peça um orçamento</button>
+      <button class="fs-5 mt-5">{{ $t('Home.budget_button_text') }}</button>
     </div>
 
     <div id="technologies-container"> 
-      
-      <h2 class="fs-1">Tecnologias</h2>       
+    
+      <h2 class="fs-1">{{ $t('Home.technologies') }}</h2>       
     
         <div class="d-flex flex-row justify-content-center align-items-center flex-wrap col-10 col-md-8 m-auto mt-5"> 
               <div id="card-technologie" class="d-flex justify-content-center align-items-center rounded">
@@ -116,7 +113,7 @@
               </div>
               <div id="card-technologie" class="d-flex justify-content-center align-items-center rounded">
                   <img src="../assets/technologies-icons/react.webp">
-              </div>
+              </div> 
               <div id="card-technologie" class="d-flex justify-content-center align-items-center rounded">
                   <img src="../assets/technologies-icons/python.webp">
               </div>
@@ -141,11 +138,10 @@
               <div id="card-technologie" class="d-flex justify-content-center align-items-center rounded">
                   <img src="../assets/technologies-icons/docker.webp">
               </div>
-        </div>
+        </div> 
     </div>
-
-  </div>
-
+        
+  </div> 
 </template>
 
 <script lang="ts">
@@ -189,61 +185,11 @@ export default defineComponent({
 
         presentationObserver.observe(presentationContainer);
     }
-  },
-  setImgsTechnologies() {
-
-    const technologiesContainer = document.querySelector('#technologies-container');
-    const stacks = document.querySelector('#technologies');
-    
-     
-    const stackList = [
-    "html",
-    "css",
-    "javascript",
-    "bootstrap",
-    "typescript",
-    "vue",
-    "react",
-    "python",
-    "php",
-    "laravel",
-    "next",
-    "nuxt",
-    "sql",
-    "node",
-    "docker",
-  ];
-   
-  for(let i = 0; i <= stackList.length; i++) {
-
-    let stack = stackList[i]
-    const link = `../assets/technologies-icons/${stack}.webp`;
-
-    const div = document.createElement('div');
-    div.setAttribute('id', 'card-technologie');
-    div.setAttribute('class', 'd-flex justify-content-center align-items-center rounded');
-
-    const img = document.createElement('img');
-    img.setAttribute('src', link); 
-
-    div.appendChild(img);
-    
-    
-    if(technologiesContainer) {
-     technologiesContainer.appendChild(div);     
-    };     
-
-  }
-  
-
-  },
-
-
+  },  
 
 },
 mounted() {
    this.handlePresentationObserver(); 
-  // this.setImgsTechnologies();
 }
 
 });
@@ -341,14 +287,14 @@ mounted() {
   border-top-right-radius: 70%;    
 }
 
-#info-1 {
+#about-us {
     width: 100%;
     height: auto;
     background-color: var(--darkolivegreen);
     color: var(--white);
 }
 
-#info-1 img {
+#about-us img {
   width: 280px;
   height: 280px;
 }
@@ -428,7 +374,7 @@ mounted() {
   }
   @media(max-width: 767px) {
 
-    #info-1 img {
+    #about-us img {
       width: 50%;
       height: auto;
     }

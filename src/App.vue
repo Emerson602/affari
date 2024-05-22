@@ -5,7 +5,7 @@
   <MobileNav />
   <router-view /> 
   <Contacts />
-  <Footer /> 
+  <Footer />  
 </template>
 
 <script>
@@ -16,6 +16,7 @@ import MobileNav from "./components/MobileNav";
 import Preload from "./components/Preload";
 import Contacts from "./components/Contacts";
 import Footer from "./components/Footer";
+
 
 
 
@@ -57,8 +58,9 @@ a {
     font-weight: bold; 
 }
 
-a:hover {
+a:hover, #option:hover {
   color: var(--white);
   transition: 1s;
+  cursor: pointer;
 } 
 </style>
