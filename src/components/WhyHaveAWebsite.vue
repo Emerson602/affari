@@ -54,7 +54,7 @@ export default {
   name: 'WhyHaveAWebsite', 
   data() {
     return {
-      name: 'WhyHaveAWebsite',      
+          
     }
   },   
 }

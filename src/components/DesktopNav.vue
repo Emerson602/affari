@@ -56,27 +56,27 @@ export default{
     name: 'DesktopNav',
     data() {
         return {
-            logo: require('@/assets/logo.webp')
+            logo: require('@/assets/logo.webp'),             
         }
     },
     methods: {
         
         handleSkillsObserver() {
 
-        const skillsContainer = document.querySelector('#skills');
+            const skillsContainer = document.querySelector('#skills');
 
-        const skillsObserver = new IntersectionObserver((elements) => {
-        if (!elements[0].isIntersecting) {             
-            return;
-        }
+            const skillsObserver = new IntersectionObserver((elements) => {
+            if (!elements[0].isIntersecting) {             
+                return;
+            }
 
-        this.startAnimation();    
-        
-        skillsObserver.unobserve(skillsContainer);        
-        
-        }, {});
+            this.startAnimation();    
+            
+            skillsObserver.unobserve(skillsContainer);        
+            
+            }, {});
 
-        skillsObserver.observe(skillsContainer);
+            skillsObserver.observe(skillsContainer);
         }, 
 
         scrollToAboutUs() {
@@ -91,7 +91,7 @@ export default{
 
     },
     mounted() {
-
+       
     }
 }
 

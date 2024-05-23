@@ -17,8 +17,7 @@ const languages = {
     pt_br,
     en,
     it
-}
-
+} 
 
 const i18n = createI18n({
     locale: 'pt_br',

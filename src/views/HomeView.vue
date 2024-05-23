@@ -74,7 +74,7 @@ export default defineComponent({
 
 },
 mounted() {
-   this.handlePresentationObserver(); 
+   //this.handlePresentationObserver(); 
    this.setLinkWpp();
 }
 

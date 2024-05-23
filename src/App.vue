@@ -26,7 +26,7 @@ export default {
     MobileNav,
     Contacts,
     Footer,
-   }, 
+   },     
    
 }
 </script>
@@ -48,6 +48,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: var(--darkolivegreen);  
+  background-color: var(--black);
 }
 
 a {

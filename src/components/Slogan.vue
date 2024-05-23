@@ -28,7 +28,7 @@ return {
 
 <style scoped>
 #home {
-    margin: 130px 0 0 0;  
+    padding: 130px 0 0 0;  
     height: auto;
     width: 100%;    
  }
