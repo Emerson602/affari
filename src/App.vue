@@ -15,10 +15,7 @@ import DesktopNav from "./components/DesktopNav";
 import MobileNav from "./components/MobileNav";
 import Preload from "./components/Preload";
 import Contacts from "./components/Contacts";
-import Footer from "./components/Footer";
-
-
-
+import Footer from "./components/Footer"; 
 
 export default {
   name: 'Affari',
@@ -30,6 +27,7 @@ export default {
     Contacts,
     Footer,
    }, 
+   
 }
 </script>
 

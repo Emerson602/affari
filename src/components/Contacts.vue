@@ -114,6 +114,10 @@ section, h2{
     transition: 1s;    
 }
 
+textarea {
+    height: 150px;
+}
+
 input, textarea,
 input:focus, textarea:focus {
     background-color: var(--darkgray);
@@ -137,8 +141,16 @@ button {
     padding: 10px 0;
     width: 220px;
     border-radius: 50px;
-    border: none !important;
+    border: solid 1px var(--black);
 }
+
+button:hover {
+  background-color: var(--darkgrey);
+  border: solid 1px var(--darkolivegreen); 
+  color: var(--darkolivegreen);   
+  transition: 1s; 
+}
+
 
 @media(max-width: 768px) { 
 
