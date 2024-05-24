@@ -5,14 +5,20 @@ interface NavBarTypeIt {
   contacts: string;
 }
 
-interface it {
-  NavBar: NavBarTypeIt;
-  Home: HomeTypePtIt;
-}
-
 interface HomeTypePtIt {
   home: string;
 }
+
+interface ServicesTypeIt {
+  services: string;
+}
+
+interface it {
+  NavBar: NavBarTypeIt;
+  Home: HomeTypePtIt;  
+  Services: ServicesTypeIt;
+} 
+
 
 export const it = {
   NavBar: {  
@@ -75,6 +81,18 @@ export const it = {
     message: 'Messaggio', 
 
     submit: 'Inviare',
+
+  },
+
+  Services: {
+    web_development: 'Sviluppo web',
+    maintenance: 'Manutenzione',
+    support: 'Supporto',
+    web_development_txt: 'Sviluppiamo siti web, landing pages, one pages e blog.',
+    maintenance_txt: 'Effettuiamo manutenzione e correzione degli errori.',
+    support_txt: 'Offriamo supporto completo per gli aggiornamenti dei contenuti.',
+
+
 
   }
 

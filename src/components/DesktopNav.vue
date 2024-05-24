@@ -88,7 +88,6 @@ export default{
             const contactsContainer = document.querySelector('#contacts-container')
             contactsContainer.scrollIntoView({ behavior: 'smooth' });              
         },
-
     },
     mounted() {
        

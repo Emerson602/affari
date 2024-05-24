@@ -2,53 +2,50 @@
     <div id="development-stages">
        
         <section>
-        <div>
-            <h3>Lorem ipsum dolor, sit amet consecte</h3>
-            <p>
-                Quisquam optio accusantium asperiores dolores 
-                    quos quae distinctio sequi atque unde impedit. 
-                    Quaerat dolores labore consectetur facilis ut
-                     ipsum facere iusto deleniti.
-            </p>
-            <div>
-                <span>Lorem ipsum dolor, sit a</span>
-                <span>Lorem ipsum dolor, sit a</span>
-                <span>Lorem ipsum dolor, sit a</span>
+        <div class="d-flex justify-content-center align-items-center">
+
+            <div class="col-5 m-5">
+                <h3 class="fs-1">Crie sua presença online</h3>
+                <p class="fs-5 mt-5">                    
+                    Sua identidade é singular, e seu website deve refletir isso. Aqui na Affari Development, somos uma equipe especializada em transformar sua visão digital em realidade, oferecendo soluções personalizadas que elevam sua marca a outro nível.
+                    Juntamos nossa experiência em design, desenvolvimento e marketing digital para:
+                </p>
+                <div>
+                    <span>Lorem ipsum dolor, sit a</span>
+                    <span>Lorem ipsum dolor, sit a</span>
+                    <span>Lorem ipsum dolor, sit a</span>
+                </div>
+            </div>
+            <div class="col-3">
+                <img class="col-12" id="img-1" src="../assets/img-2.webp">
             </div>
         </div>
-        <div>
-            <h2>Etapas</h2>
-              <div>
-                <span>Desenvolvimento web</span>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing 
-                    
-                     Quisquam optio accusantium asperiores dolores 
-                    quos quae distinctio sequi atque unde impedit. 
-                    Quaerat dolores labore consectetur facilis ut
-                     ipsum facere iusto deleniti.
+        <h2 class="mt-5 fs-1">Etapas</h2>
+
+        <div class="mt-5 d-flex flex-row justify-content-center align-items-center flex-wrap">
+            
+            <div id="stages" class="rounded p-3 d-flex flex-column justify-content-center align-items-center">
+                <span  class="fs-4 fw-bold">Coleta de dados</span>
+                <p class="mt-3">
+                    Você preencherá um Briefing com alguns dados da sua empresa, como: nome, produtos, etc.
                 </p>
             </div>
-            <div>
-                <span>Manutenção</span>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing 
-                    
-                     Quisquam optio accusantium asperiores dolores 
-                    quos quae distinctio sequi atque unde impedit. 
-                    Quaerat dolores labore consectetur facilis ut
-                     ipsum facere iusto deleniti.
+            <div id="stages" class="rounded p-3 d-flex flex-column justify-content-center align-items-center">
+                <span  class="fs-4 fw-bold">Criação de design</span>
+                <p class="mt-3">
+                    Mostraremos exemplos de sites para criar um design único para sua empresa.
                 </p>
             </div>
-            <div>
-                <span>Suporte</span>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing 
-                    
-                     Quisquam optio accusantium asperiores dolores 
-                    quos quae distinctio sequi atque unde impedit. 
-                    Quaerat dolores labore consectetur facilis ut
-                     ipsum facere iusto deleniti.
+            <div id="stages" class="rounded p-3 d-flex flex-column justify-content-center align-items-center">
+                <span  class="fs-4 fw-bold">Desenvolvimento</span>
+                <p class="mt-3">
+                    Nessa etapa, me dedicarei completamente para te entregar o melhor site possível.
+                </p>
+            </div>
+            <div id="stages" class="rounded p-3 d-flex flex-column justify-content-center align-items-center">
+                <span class="fs-4 fw-bold">Entrega</span>
+                <p class="mt-3">
+                    Após tudo certo, chegou a hora de encerrar os trabalhos e curtir o resultadol
                 </p>
             </div>
         </div>
@@ -75,9 +72,20 @@ return {
 #development-stages {
     background-color: var(--darkolivegreen);
     color: var(--white);
+    padding: 100px 0 0 0;
 }
 svg {
     fill: var(--darkolivegreen);
     background-color: var(--black);
+    margin: 20px 0 0 0;
+} 
+
+#stages {
+    width: 300px;
+    height: 180px;
+    margin: 10px;
+    background-color: var(--lightolivegreen);        
+    box-shadow: 10px var(--black)
 }
+
 </style>

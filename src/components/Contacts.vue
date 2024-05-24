@@ -165,6 +165,6 @@ button:hover {
     #btn-whatsapp, #btn-instagram, #btn-email {
         width: 80%;
     }
-}
+} 
 
 </style>

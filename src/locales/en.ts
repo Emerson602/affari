@@ -5,14 +5,21 @@ interface NavBarTypeEn {
   contacts: string;
 }
 
-interface en {
-  NavBar: NavBarTypeEn;
-  Home: HomeTypePtEn;
-}
-
-interface HomeTypePtEn {
+interface HomeTypeEn {
   home: string;
 }
+
+interface ServicesTypeEn {
+  services: string;
+}
+
+interface en {
+  NavBar: NavBarTypeEn;
+  Home: HomeTypeEn;
+  Services: ServicesTypeEn;
+}
+
+
 
 export const en = {
    NavBar: {  
@@ -74,6 +81,17 @@ export const en = {
     submit: 'Send',
 
     
+  },
+
+  Services: {
+    web_development: 'Web development',
+    maintenance: 'Maintenance',
+    support: 'Support',
+    web_development_txt: 'We develop websites, landing pages, one pages, and blogs.',
+    maintenance_txt: 'We perform maintenance and error corrections.',
+    support_txt: 'We offer full support for content updates.',
+
+
   }
  };
  

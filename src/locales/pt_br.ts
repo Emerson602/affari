@@ -9,9 +9,14 @@ interface HomeTypePtBr {
   home: string;
 }
 
+interface ServicesTypePtBr {
+  services: string;
+}
+
 interface pt_br {
   NavBar: NavBarTypePtBr;
   Home: HomeTypePtBr;
+  Services: ServicesTypePtBr;
 }
 
 export const pt_br = {  
@@ -76,6 +81,16 @@ export const pt_br = {
      message: 'Mensagem', 
 
      submit: 'Enviar',
+  },
+
+  Services: {
+    web_development: 'Desenvolvimento web',
+    maintenance: 'Manutenção',
+    support: 'Suporte',
+    web_development_txt: 'Desenvolvemos sites, landing pages, one pages e blogs.',
+    maintenance_txt: 'Realizamos manutenções e correções de erros.',
+    support_txt: 'Oferecemos suporte completo para atualização de conteúdo.',
+
   }
 
 };

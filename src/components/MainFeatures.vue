@@ -70,5 +70,6 @@ return {
 <style scoped>
 #main-features {
     border-bottom: solid 10px var(--darkolivegreen);
+    padding: 100px 0;
 }
 </style>
