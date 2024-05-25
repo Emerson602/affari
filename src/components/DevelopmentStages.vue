@@ -2,21 +2,21 @@
     <div id="development-stages">
        
         <section>
-        <div class="d-flex justify-content-center align-items-center">
+        <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center">
 
-            <div class="col-5 m-5">
+            <div class="col-11 col-lg-5 m-3 m-lg-5">
                 <h3 class="fs-1">Crie sua presença online</h3>
                 <p class="fs-5 mt-5">                    
                     Sua identidade é singular, e seu website deve refletir isso. Aqui na Affari Development, somos uma equipe especializada em transformar sua visão digital em realidade, oferecendo soluções personalizadas que elevam sua marca a outro nível.
                     Juntamos nossa experiência em design, desenvolvimento e marketing digital para:
                 </p>
-                <div>
+                <div class="col-12 d-flex flex-row justify-content-center align-items-center flex-wrap">
                     <span>Lorem ipsum dolor, sit a</span>
                     <span>Lorem ipsum dolor, sit a</span>
                     <span>Lorem ipsum dolor, sit a</span>
                 </div>
             </div>
-            <div class="col-3">
+            <div class="col-6 col-sm-3 m-3 m-lg-5">
                 <img class="col-12" id="img-1" src="../assets/img-2.webp">
             </div>
         </div>

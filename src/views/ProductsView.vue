@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <div class="products">
    <p>lorem ipsum</p> 
   </div>
 </template>
@@ -9,7 +9,7 @@
 import { defineComponent } from 'vue';
 
 export default defineComponent({
-  name: 'AboutView',
+  name: 'ProductsView',
   components: {
     
   },
@@ -23,7 +23,7 @@ export default defineComponent({
 </script>
 
 <style scoped>
-  .about{
+  .products{
     background-color: blue !important;
     width: 100vw;
     height: 100vh;

@@ -1,7 +1,7 @@
 interface NavBarTypeEn {
   home: string;
   services: string;
-  about: string;
+  products: string;
   contacts: string;
 }
 
@@ -25,7 +25,7 @@ export const en = {
    NavBar: {  
     home: 'Home',   
     services: 'Services',
-    about: 'About Us',
+    products: 'Products',
     contacts: 'Contacts'     
    },
    Home: {

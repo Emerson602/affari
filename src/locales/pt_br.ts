@@ -1,7 +1,7 @@
 interface NavBarTypePtBr {
   home: string;
   services: string;
-  about: string;
+  products: string;
   contacts: string;
 }
 
@@ -23,7 +23,7 @@ export const pt_br = {
   NavBar: {  
     home: 'Inicio',   
     services: 'Serviços',
-    about: 'Sobre nós',
+    products: 'Produtos',
     contacts: 'Contatos',
   },
   Home: {

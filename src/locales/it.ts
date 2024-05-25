@@ -1,7 +1,7 @@
 interface NavBarTypeIt {
   home: string;
   services: string;
-  about: string;
+  products: string;
   contacts: string;
 }
 
@@ -24,7 +24,7 @@ export const it = {
   NavBar: {  
     home: 'Inizio',   
     services: 'Cosa facciamo',
-    about: 'Chi siamo',
+    products: 'Prodotti',
     contacts: 'Contatti'     
   },
   Home: {
