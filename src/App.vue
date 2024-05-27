@@ -26,7 +26,13 @@ export default {
     MobileNav,
     Contacts,
     Footer,
-   },     
+   },  
+methods: {
+ 
+},
+mounted() {
+
+},
    
 }
 </script>

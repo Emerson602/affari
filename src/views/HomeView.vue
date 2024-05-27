@@ -59,23 +59,19 @@ export default defineComponent({
         presentationObserver.observe(presentationContainer);
     }
   }, 
-    setLinkWpp() {
-      const link = document.querySelectorAll('[id="link-wpp"]'); 
-      
-      const links = document.querySelectorAll('[id="link-wpp"]'); 
-  
-      if (links) {
-        links.forEach(link => {
-          link.setAttribute('href', 'https://api.whatsapp.com/send?phone=5582993975054');
-          link.setAttribute('target', '_blank');
-      });
-  } 
-    } 
+  scrollHomeTop() {
+    const home = document.querySelector('#home');
+
+    if (home) {
+      home.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, 
+    
 
 },
-mounted() {
-   //this.handlePresentationObserver(); 
-   this.setLinkWpp();
+mounted() {     
+   this.handlePresentationObserver();
+   this.scrollHomeTop();
 }
 
 });

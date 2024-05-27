@@ -30,6 +30,7 @@ export default defineComponent({
 
     handlePresentationObserver() {
       const presentationContainer = document.querySelector('#title');
+     
       if (presentationContainer) {
           const presentationObserver = new IntersectionObserver((entries) => {
               entries.forEach(entry => {
@@ -54,11 +55,18 @@ export default defineComponent({
           presentationObserver.observe(presentationContainer);
       }
     }, 
-  
+    scrollServicesTop() {
+    const homeServices = document.querySelector('#what-we-do');
+
+    if (homeServices) {
+      homeServices.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, 
 
 },
   mounted() {
   this.handlePresentationObserver(); 
+  this.scrollServicesTop();
   }
 });
 

@@ -40,18 +40,19 @@
         </div> 
 
     </div>
-
-    <a id="link-wpp">
-        <button class="fs-5 mt-5">{{ $t('Home.budget_button_text') }}</button>
-    </a>
+    
+    <QuoteButton />
 
    </div> 
 </template>
 
 <script>
-
+import QuoteButton from "./QuoteButton.vue";
 export default {
   name: 'WhyHaveAWebsite', 
+  components: {
+    QuoteButton,
+  },
   data() {
     return {
           

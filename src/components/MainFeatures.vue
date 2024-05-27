@@ -1,64 +1,74 @@
 <template>
     <div id="main-features">         
         
-        <section>
-            <div>
-                <img src="#">
-                <span>texto</span>
-                <a>
-                    <button>
-                        orçamento
-                    </button>
-                </a>
-            </div>
-        <div>
-            <h2>Principais funcionalidades</h2>
-            <div>
-                <span>Desenvolvimento web</span>
-               
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing 
-                    
-                     Quisquam optio accusantium asperiores dolores 
-                    quos quae distinctio sequi atque unde impedit. 
-                    Quaerat dolores labore consectetur facilis ut
-                     ipsum facere iusto deleniti.
+        <section class="d-flex flex-column flex-lg-row justify-content-center align-items-center">
+
+            <div class="col-12 col-lg-6 mb-3 mb-lg-0 d-flex flex-column justify-content-center align-items-center">
+
+                <img class="col-6 col-lg-5" src="../assets/img-3.webp">
+
+                <p class="col-11 col-lg-8 fs-5 mt-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Laboriosam quaerat, beatae nisi tempora consectetur                 
                 </p>
+
+                <QuoteButton />
             </div>
-            <div>
-                <span>Manutenção</span>
-               
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing 
-                    
-                     Quisquam optio accusantium asperiores dolores 
-                    quos quae distinctio sequi atque unde impedit. 
-                    Quaerat dolores labore consectetur facilis ut
-                     ipsum facere iusto deleniti.
-                </p>
-            </div>
-            <div>
-                <span>Suporte</span>
+ 
+            <div class="col-12 col-lg-6 p-3 p-lg-5 mt-5 mt-lg-0 text-start">
+                <h2 class="fs-1 mb-5 text-center text-lg-start">Principais funcionalidades</h2>
+                <div>
+                    <span class="fs-4">Desenvolvimento web</span>
                 
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing 
+                    <p class="fs-5 mt-3">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing 
+                        
+                        Quisquam optio accusantium asperiores dolores 
+                        quos quae distinctio sequi atque unde impedit. 
+                        Quaerat dolores labore consectetur facilis ut
+                        ipsum facere iusto deleniti.
+                    </p>
+                </div>
+                <hr class="mb-4">
+                <div>
+                    <span class="fs-4">Manutenção</span>
+                
+                    <p class="fs-5 mt-3">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing 
+                        
+                        Quisquam optio accusantium asperiores dolores 
+                        quos quae distinctio sequi atque unde impedit. 
+                        Quaerat dolores labore consectetur facilis ut
+                        ipsum facere iusto deleniti.
+                    </p>
+                </div>
+                <hr class="mb-4">
+                <div>
+                    <span class="fs-4">Suporte</span>
                     
-                     Quisquam optio accusantium asperiores dolores 
-                    quos quae distinctio sequi atque unde impedit. 
-                    Quaerat dolores labore consectetur facilis ut
-                     ipsum facere iusto deleniti.
-                </p>
+                    <p class="fs-5 mt-3">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing 
+                        
+                        Quisquam optio accusantium asperiores dolores 
+                        quos quae distinctio sequi atque unde impedit. 
+                        Quaerat dolores labore consectetur facilis ut
+                        ipsum facere iusto deleniti.
+                    </p>
+                </div>
             </div>
-        </div>
         </section>
     
     </div>
 </template>
 
 <script>
+import QuoteButton from "./QuoteButton.vue";
 
 export default {
 name: 'MainFeatures', 
+components: {
+    QuoteButton,
+   }, 
 data() {
 return {
     
@@ -71,5 +81,9 @@ return {
 #main-features {
     border-bottom: solid 10px var(--darkolivegreen);
     padding: 100px 0;
+} 
+
+#main-features p {
+    color: var(--white);
 }
 </style>

@@ -3,7 +3,7 @@
     
     <h2 class="fs-1">{{ $t('Home.technologies') }}</h2>       
   
-      <div class="d-flex flex-row justify-content-center align-items-center flex-wrap col-10 col-md-8 m-auto mt-5"> 
+      <div id="technologies" class="d-flex flex-row justify-content-center align-items-center flex-wrap col-10 col-md-8 m-auto mt-5"> 
             <div id="card-technologie" class="d-flex justify-content-center align-items-center rounded">
                 <img src="../assets/technologies-icons/html.webp">
             </div>
@@ -61,7 +61,13 @@ export default {
     return {
         
     }
-  },   
+  },  
+  methods: {
+  
+  },
+  mounted() {
+ 
+  }
 }
 </script>
 
