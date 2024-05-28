@@ -89,7 +89,42 @@ export const pt_br = {
     support: 'Suporte',
     web_development_txt: 'Desenvolvemos sites, landing pages, one pages e blogs.',
     maintenance_txt: 'Realizamos manutenções e correções de erros.',
-    support_txt: 'Oferecemos suporte completo para atualização de conteúdo.',
+    support_txt: 'Oferecemos suporte durante a hospedagem do seu site.',
+    stage_tittle: 'Crie sua presença online',
+    stage_txt: `Sua identidade é única, e seu site deve representar isso.
+     Na Affari Development, nossa equipe especializada se dedica a transformar
+      sua visão digital em realidade. Oferecemos soluções personalizadas que
+       elevam sua marca a um novo patamar`,
+    stages: 'Etapas',
+
+    tt_stage_card_1: `Coleta de dados`,
+    txt_stage_card_1: `Briefing para coleta de dados sobre a sua empresa, ex: nome, produtos, etc.`,
+    
+    tt_stage_card_2: `Criação de design`,
+    txt_stage_card_2: `Mostraremos exemplos de sites do mesmo segmento que podem servir como referência
+     e, com base nisso, criamos um esboço.`,
+    
+    tt_stage_card_3: `Desenvolvimento`,
+    txt_stage_card_3: `Iniciamos o desenvolvimento do site e enviamos atualizações periodicamente.`,
+    
+    tt_stage_card_4: `Entrega`,
+    txt_stage_card_4: `Concluímos o projeto e entregamos o site finalizado.`, 
+
+
+    txt_qualities_1: `Permita que seus clientes te encontrem!`,
+    tt_qualities_1: `Garantimos um resultado de qualidade`,
+
+    sb_txt_qualities_2: `Site responsivo`,
+    txt_qualities_2: `Um site que se adapta automaticamente a diferentes dispositivos e tamanhos de tela,
+    garantindo uma experiência de usuário otimizada em qualquer dispositivo, seja desktop, tablet ou smartphone.`,
+
+    sb_txt_qualities_3: `Design moderno`,
+    txt_qualities_3: `Visualmente atraente, com tipografia clara, imagens de alta qualidade e uma navegação intuitiva.`,
+
+    sb_txt_qualities_4: `Otimizado`,
+    txt_qualities_4: `Carregamento rápido, conteúdo relevante, fácil navegação e compatibilidade com dispositivos e motores de busca.`,
+
+
 
   }
 

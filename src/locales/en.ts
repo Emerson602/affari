@@ -89,7 +89,42 @@ export const en = {
     support: 'Support',
     web_development_txt: 'We develop websites, landing pages, one pages, and blogs.',
     maintenance_txt: 'We perform maintenance and error corrections.',
-    support_txt: 'We offer full support for content updates.',
+    support_txt: 'We provide support during the hosting of your website.',
+
+    stage_tittle: 'Create your online presence.',
+    stage_txt: `Your identity is unique, and your website should reflect that.
+     At Affari Development, our specialized team is dedicated to turning your
+      digital vision into reality. We offer personalized solutions that elevate
+       your brand to a new level.`,
+    stages: 'Stages',
+
+    tt_stage_card_1: `Data Collection`,
+    txt_stage_card_1: `Briefing for data collection about your company, e.g., name, products, etc.`,
+    
+    tt_stage_card_2: `Design Creation`,
+    txt_stage_card_2: `We'll show examples of websites in the same sector that can serve as reference,
+     and based on that, we create a sketch.`,
+    
+    tt_stage_card_3: `Development`,
+    txt_stage_card_3: `We start the website development and send updates periodically.`,
+    
+    tt_stage_card_4: `Delivery`,
+    txt_stage_card_4: `We conclude the project and deliver the finalized website.`,     
+
+    txt_qualities_1: "Allow your customers to find you!",
+    tt_qualities_1: "We guarantee a quality outcome",
+
+    sb_txt_qualities_2: "Responsive Website",
+    txt_qualities_2: `A website that automatically adapts to different devices and screen sizes,
+     ensuring an optimized user experience on any device, whether desktop, tablet, or smartphone.`,
+
+    sb_txt_qualities_3: "Modern Design",
+    txt_qualities_3: "Visually appealing, with clear typography, high-quality images, and intuitive navigation.",
+
+    sb_txt_qualities_4: "Optimized",
+    txt_qualities_4: "Fast loading, relevant content, easy navigation, and compatibility with devices and search engines.",
+
+
 
 
   }

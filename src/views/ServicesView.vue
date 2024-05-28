@@ -1,7 +1,7 @@
 <template>
   <WhatWeDo />
   <DevelopmentStages />
-  <MainFeatures />
+  <MainQualities />
 </template>
 
 <script lang="ts">
@@ -10,14 +10,14 @@ import { defineComponent } from 'vue';
 
 import WhatWeDo from "../components/WhatWeDo.vue";
 import DevelopmentStages from "../components/DevelopmentStages.vue";
-import MainFeatures from "../components/MainFeatures.vue";
+import MainQualities from "../components/MainQualities.vue";
 
 export default defineComponent({
   name: 'ServicesView',
   components: {
     WhatWeDo,
     DevelopmentStages,
-    MainFeatures,
+    MainQualities,
   },
   data() {
     return {

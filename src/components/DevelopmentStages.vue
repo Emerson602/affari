@@ -5,42 +5,41 @@
         <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center">
 
             <div class="col-11 col-lg-5 m-3 m-lg-5 text-start">
-                <h3 class="fs-1 text-center">Crie sua presença online</h3>
+                <h3 class="fs-1 text-center">{{ $t('Services.stage_tittle')}}</h3>
                 <p class="fs-5 mt-5">                    
-                    Sua identidade é singular, e seu website deve refletir isso. Aqui na Affari Development, somos uma equipe especializada em transformar sua visão digital em realidade, oferecendo soluções personalizadas que elevam sua marca a outro nível.
-                    Juntamos nossa experiência em design, desenvolvimento e marketing digital para:
+                    {{ $t('Services.stage_txt')}}
                 </p>
             </div>
             <div class="col-6 col-sm-3 m-3 m-lg-5">
                 <img class="col-12" id="img-1" src="../assets/img-2.webp">
             </div>
         </div>
-        <h2 class="mt-5 fs-1">Etapas</h2>
+        <h2 class="mt-5 fs-1">{{ $t('Services.stages')}}</h2>
 
         <div class="mt-5 d-flex flex-row justify-content-center align-items-center flex-wrap">
             
             <div id="stages" class="rounded p-3 d-flex flex-column justify-content-center align-items-center">
-                <span  class="fs-4 fw-bold">Coleta de dados</span>
+                <span  class="fs-4 fw-bold">{{ $t('Services.tt_stage_card_1') }}</span>
                 <p class="mt-3">
-                    Você preencherá um Briefing com alguns dados da sua empresa, como: nome, produtos, etc.
+                    {{ $t('Services.txt_stage_card_1') }}
                 </p>
             </div>
             <div id="stages" class="rounded p-3 d-flex flex-column justify-content-center align-items-center">
-                <span  class="fs-4 fw-bold">Criação de design</span>
+                <span  class="fs-4 fw-bold">{{ $t('Services.tt_stage_card_2') }}</span>
                 <p class="mt-3">
-                    Mostraremos exemplos de sites para criar um design único para sua empresa.
+                    {{ $t('Services.txt_stage_card_2') }}
                 </p>
             </div>
             <div id="stages" class="rounded p-3 d-flex flex-column justify-content-center align-items-center">
-                <span  class="fs-4 fw-bold">Desenvolvimento</span>
+                <span  class="fs-4 fw-bold">{{ $t('Services.tt_stage_card_3') }}</span>
                 <p class="mt-3">
-                    Nessa etapa, me dedicarei completamente para te entregar o melhor site possível.
+                    {{ $t('Services.txt_stage_card_3') }}
                 </p>
             </div>
             <div id="stages" class="rounded p-3 d-flex flex-column justify-content-center align-items-center">
-                <span class="fs-4 fw-bold">Entrega</span>
+                <span class="fs-4 fw-bold">{{ $t('Services.tt_stage_card_4') }}</span>
                 <p class="mt-3">
-                    Após tudo certo, chegou a hora de encerrar os trabalhos e curtir o resultadol
+                    {{ $t('Services.txt_stage_card_4') }}
                 </p>
             </div>
         </div>

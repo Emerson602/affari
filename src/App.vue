@@ -6,6 +6,7 @@
   <router-view /> 
   <Contacts />
   <Footer />  
+
 </template>
 
 <script>
@@ -17,6 +18,7 @@ import Preload from "./components/Preload";
 import Contacts from "./components/Contacts";
 import Footer from "./components/Footer"; 
 
+
 export default {
   name: 'Affari',
    components: {
@@ -26,6 +28,7 @@ export default {
     MobileNav,
     Contacts,
     Footer,
+
    },  
 methods: {
  
@@ -47,6 +50,7 @@ mounted() {
   --white: #fff;
   --darkgreen: #25D366;
   --darkgray: #303030;
+  --lightgreen: #25D366;
 }
 #app {
   font-family: "Nunito", sans-serif;

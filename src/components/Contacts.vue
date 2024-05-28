@@ -40,21 +40,21 @@
             <div class="d-flex flex-column flex-md-row align-items-center col-12" id="double-fields">
                 <div class="mt-4 col text-start fs-5">
                     <label for="name">{{ $t('Home.name') }}</label>
-                    <input id="name-field" type="text" class="form-control" minlength="3" required>
+                    <input id="name-field" type="text" class="rounded" minlength="3" required>
                 </div>
                 <div class="mt-4 col text-start fs-5">
                     <label for="phone">{{ $t('Home.phone') }}</label>
-                    <input id="phone-field" type="number" class="form-control" pattern="[0-9]{3,12}" minlength="3" required>
+                    <input id="phone-field" type="tel" class="rounded" pattern="[0-9]{3,12}" minlength="3" required>
                 </div>
             </div>
 
             <div class="mt-4 form-group text-start fs-5">    
                 <label for="email">E-mail</label>
-                <input type="email" class="form-control" required>
+                <input type="email" class="rounded d-block col-12" required>
             </div>
             <div class="mt-4 form-group text-start fs-5">
                 <label for="message">{{ $t('Home.message') }}</label>
-                <textarea class="form-control" type="text" rows="3" minlength="10" required></textarea>
+                <textarea class="rounded col-12" type="text" rows="3" minlength="10" required></textarea>
             </div>
             <div class="mt-5 d-flex justify-content-center justify-content-md-end align-items-center">
                 <button type="submit" class="fs-5 mt-5">{{ $t('Home.submit') }}</button>
@@ -118,13 +118,17 @@ textarea {
     height: 150px;
 }
 
-input, textarea,
-input:focus, textarea:focus {
+input, textarea {
+    border: none;
+    border-bottom: solid 0.5px var(--darkolivegreen);
     background-color: var(--darkgray);
     color: var(--white) !important;
-    border: none;
-    border-bottom: solid 0.5px var(--darkolivegreen);   
-   
+    outline: none;
+    padding: 2px;
+}
+
+input:focus, textarea:focus { 
+    border: solid 0.5px var(--darkolivegreen);        
 }
 
 #name-field {

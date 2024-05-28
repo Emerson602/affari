@@ -90,7 +90,42 @@ export const it = {
     support: 'Supporto',
     web_development_txt: 'Sviluppiamo siti web, landing pages, one pages e blog.',
     maintenance_txt: 'Effettuiamo manutenzione e correzione degli errori.',
-    support_txt: 'Offriamo supporto completo per gli aggiornamenti dei contenuti.',
+    support_txt: `Offriamo supporto durante l'hosting del tuo sito web.`,
+
+    stage_tittle: 'Crea la tua presenza online.',
+    stage_txt: `La tua identità è unica e il tuo sito web dovrebbe rappresentarla.
+    Alla Affari Development, il nostro team specializzato si dedica a trasformare
+    la tua visione digitale in realtà. Offriamo soluzioni personalizzate che
+    elevano il tuo marchio a un nuovo livello.`,
+    stages: 'Fasi',
+
+    tt_stage_card_1: `Raccolta dati`,
+    txt_stage_card_1: `Briefing per la raccolta di dati sulla tua azienda, esempio: nome, prodotti, ecc.`,
+    
+    tt_stage_card_2: `Creazione del design`,
+    txt_stage_card_2: `Mostreremo esempi di siti dello stesso settore che possono servire come riferimento
+     e, basandoci su questo, creeremo uno schema.`,
+    
+    tt_stage_card_3: `Sviluppo`,
+    txt_stage_card_3: `Iniziamo lo sviluppo del sito e inviamo aggiornamenti periodicamente.`,
+    
+    tt_stage_card_4: `Consegna`,
+    txt_stage_card_4: `Concludiamo il progetto e consegniamo il sito completato.`,  
+    
+    txt_qualities_1: "Permetti ai tuoi clienti di trovarti!",
+    tt_qualities_1: "Garantiamo un risultato di qualità",
+
+    sb_txt_qualities_2: "Sito Web Responsive",
+    txt_qualities_2: `Un sito web che si adatta automaticamente a diversi dispositivi e dimensioni dello schermo, 
+    garantendo un'esperienza utente ottimizzata su qualsiasi dispositivo, che sia desktop, tablet o smartphone.`,
+
+    sb_txt_qualities_3: "Design Moderno",
+    txt_qualities_3: "Visivamente accattivante, con tipografia chiara, immagini di alta qualità e navigazione intuitiva.",
+
+    sb_txt_qualities_4: "Ottimizzato",
+    txt_qualities_4: "Caricamento veloce, contenuto rilevante, navigazione facile e compatibilità con dispositivi e motori di ricerca.",
+
+    
 
 
 
