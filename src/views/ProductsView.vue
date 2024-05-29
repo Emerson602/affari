@@ -1,12 +1,18 @@
 <template>
-  <div id="products">
-    <div></div>
-    <svg id="wave" width="100%" height="70" viewBox="0 0 100 100" preserveAspectRatio="none">
-           <path id="wavepath" d="M0,0  L110,0C35,150 35,0 0,100z"></path>
-    </svg>
-    <div>
-      <h2>Nosso produtos</h2>
-    </div>
+  <div id="products"> 
+    <section class="d-flex flex-column ">
+
+      <h2 id="title" class="fs-1">Nosso produtos</h2>
+
+      <div class="d-flex flex-row flex-wrap justify-content-center align-items-center">
+
+        <div id="templates-container" class="row w-100 justify-content-center mt-5"> 
+
+        </div>
+
+      </div>
+
+    </section>
   </div>
 </template>
 
@@ -21,7 +27,9 @@ export default defineComponent({
   },
   data() {
     return {
-      
+      desktopNav: document.querySelector<HTMLElement>('#desktop-nav'),
+      mobileNav: document.querySelector<HTMLElement>('#mobile-nav'),        
+      borderColor: '',
     }
   },
   methods: {
@@ -32,9 +40,87 @@ export default defineComponent({
       products.scrollIntoView({ behavior: 'smooth' });
     }
   }, 
+  handlePresentationObserver() {
+      const presentationContainer = document.querySelector('#title');
+     
+      if (presentationContainer) {
+          const presentationObserver = new IntersectionObserver((entries) => {
+              entries.forEach(entry => {
+                  if (!entry.isIntersecting) { 
+                      if (this.desktopNav && this.mobileNav) {
+                          this.desktopNav.style.borderBottom = 'solid 2px var(--mossgreen)';
+                          this.mobileNav.style.borderBottom = 'solid 2px var(--mossgreen)'; 
+                          this.desktopNav.style.backgroundColor = 'var(--darkgray)';   
+                          this.mobileNav.style.backgroundColor = 'var(--darkgray)';
+                      }
+                  } else {
+                      if (this.desktopNav && this.mobileNav) {
+                          this.desktopNav.style.borderBottom = 'none';
+                          this.mobileNav.style.borderBottom = 'none';
+                          this.desktopNav.style.backgroundColor = 'var(--black)';
+                          this.mobileNav.style.backgroundColor = 'var(--black)';
+                      }
+                  }
+              });
+          }, {});
+
+          presentationObserver.observe(presentationContainer);
+      }
+    },
+
+    renderTemplates() {
+
+      const templatesContainer = document.querySelector('#templates-container');
+
+      const templates = [
+
+        {
+          img: `https://assets.startbootstrap.com/img/screenshots/themes/coming-soon.png`,
+          linkDownload: `1 downlaod`,
+          linkPreview: `1 preview`,
+        },
+        {
+          img: `https://assets.startbootstrap.com/img/screenshots/themes/clean-blog-jekyll.png`,
+          linkDownload: `2 downlaod`,
+          linkPreview: `2 preview`,
+        },
+        {
+          img: `https://assets.startbootstrap.com/img/screenshots/themes/new-age.png`,
+          linkDownload: `3 downlaod`,
+          linkPreview: `3 preview`,
+        },
+        {
+          img: `https://assets.startbootstrap.com/img/screenshots/themes/one-page-wonder.png`,
+          linkDownload: `4 downlaod`,
+          linkPreview: `4 preview`,
+        },  
+
+      ];
+
+      if(templatesContainer) { 
+    
+        templates.forEach(function(template) {
+          templatesContainer.innerHTML += `
+          <div id="templates" class="col-10 col-md-5 m-3 p-3 rounded">
+                <img src="${template.img}" class="img-fluid rounded shadow"> 
+                          
+                <div class="mt-3 d-flex flex-column flex-md-row align-items-center justify-content-center">                        
+                  <a id="btn-template" class="col-12 col-md-5 fs-6 m-2 p-2 rounded" href="${template.linkDownload}" target="_blank">Download</a>
+                  <a id="btn-template" class="col-12 col-md-5 fs-6 m-2 p-2 rounded" href="${template.linkPreview}" target="_blank">live preview</a>
+                </div> 
+          </div>`
+      });
+     
+      }
+
+    } 
+
   },
   mounted() {
-    this.scrollProductsTop();
+    this.scrollProductsTop();     
+    this.handlePresentationObserver();
+    this.renderTemplates();
+    
   }
 });
 
@@ -42,20 +128,11 @@ export default defineComponent({
 
 <style scoped>
   #products{     
-    padding: 130px 0 0 0;
+    padding: 230px 0 100px 0;
     width: 100%;
     height: auto;
-    border-bottom: solid 10px var(--darkolivegreen);
-  }
+    border-bottom: solid 10px var(--darkolivegreen); 
+  }  
 
-  #products div:nth-child(1) {
-    background-color: var(--darkolivegreen);
-    height: 200px;
-  } 
-
-  #wave {
-    background-color: var(--black);
-    fill: var(--darkolivegreen);
-  } 
 </style>
 
