@@ -71,22 +71,6 @@ a:hover, #option:hover {
   color: var(--white);
   transition: 1s;
   cursor: pointer;
-}
-
-#templates {
-  background-color: var(--darkgray);     
-}
-
-#btn-template {
-  background-color: var(--darkolivegreen);
-  color: var(--white);
-  border: solid 1px var(--darkolivegreen);    
-}
-
-#btn-template:hover {
-  background-color: var(--black);
-  transition: 1s;
-  cursor: pointer;
-}  
+} 
 
 </style>

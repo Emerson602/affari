@@ -1,16 +1,13 @@
 <template>
   <div id="products"> 
-    <section class="d-flex flex-column ">
+    <section class="d-flex flex-column "> 
 
       <h2 id="title" class="fs-1">Nosso produtos</h2>
 
-      <div class="d-flex flex-row flex-wrap justify-content-center align-items-center">
-
+      <div class="d-flex flex-row flex-wrap justify-content-center align-items-center"> 
         <div id="templates-container" class="row w-100 justify-content-center mt-5"> 
-
-        </div>
-
-      </div>
+        </div> 
+      </div> 
 
     </section>
   </div>
@@ -113,14 +110,41 @@ export default defineComponent({
      
       }
 
+        function addDynamicStyles() {
+
+          const styles = `
+            #templates {
+              background-color: var(--darkgray);     
+            }
+
+            #btn-template {
+              background-color: var(--darkolivegreen);
+              color: var(--white);
+              border: solid 1px var(--darkolivegreen);    
+            }
+
+            #btn-template:hover {
+              background-color: var(--black);
+              transition: 1s;
+              cursor: pointer;
+            }
+          `; 
+
+          const styleSheet = document.createElement("style");    
+          styleSheet.innerHTML = styles;
+          document.head.appendChild(styleSheet);  
+          
+      } 
+    
+      addDynamicStyles();
+
     } 
 
   },
   mounted() {
     this.scrollProductsTop();     
     this.handlePresentationObserver();
-    this.renderTemplates();
-    
+    this.renderTemplates();     
   }
 });
 
