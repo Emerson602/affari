@@ -103,13 +103,11 @@
             this.changeTextModal(this.$t('Home.sending'), '');
 
             try {
-                await axios.post('http://localhost:3000/send-email', this.form);                        
-                this.changeBtnState(false);    
+                await axios.post('http://localhost:3000/send-email', this.form);                                
                 this.changeTextModal(this.$t('Home.sent_successfully'), this.$t('Home.we_will_return')); 
                 this.showBtnClose(true);            
             } catch (error) {
-                console.error('Erro ao enviar o formulário:', error);
-                this.changeBtnState(false);    
+                console.error('Erro ao enviar o formulário:', error);                   
                 this.changeTextModal(this.$t('Home.sending_error'), ''); 
                 this.showBtnClose(true);              
             }
@@ -139,8 +137,9 @@
         },
 
         closeModal() {
+            this.changeBtnState(false);
             this.visibleModal = false;
-            this.resetForm(); 
+            this.resetForm();             
         },
         resetForm() {
             this.form.email = '';
