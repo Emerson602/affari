@@ -103,7 +103,7 @@
             this.changeTextModal(this.$t('Home.sending'), '');
 
             try {
-                await axios.post('http://localhost:3000/send-email', this.form);                                
+                await axios.post('https://affari-send-email.vercel.app/send-email', this.form);                                
                 this.changeTextModal(this.$t('Home.sent_successfully'), this.$t('Home.we_will_return')); 
                 this.showBtnClose(true);            
             } catch (error) {
