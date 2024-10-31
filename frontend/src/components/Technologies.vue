@@ -25,16 +25,16 @@
             <div id="card-technologie" class="d-flex justify-content-center align-items-center rounded">
                 <img src="../assets/technologies-icons/react.webp">
             </div> 
-            <div id="card-technologie" class="d-flex justify-content-center align-items-center rounded">
+            <div id="card-technologie" class="d-none justify-content-center align-items-center rounded">
                 <img src="../assets/technologies-icons/python.webp">
             </div>
-            <div id="card-technologie" class="d-flex justify-content-center align-items-center rounded">
+            <div id="card-technologie" class="d-none justify-content-center align-items-center rounded">
                 <img src="../assets/technologies-icons/php.webp">
             </div>
-            <div id="card-technologie" class="d-flex justify-content-center align-items-center rounded">
+            <div id="card-technologie" class="d-none justify-content-center align-items-center rounded">
                 <img src="../assets/technologies-icons/laravel.webp">
             </div>
-            <div id="card-technologie" class="d-flex justify-content-center align-items-center rounded">
+            <div id="card-technologie" class="d-none justify-content-center align-items-center rounded">
                 <img src="../assets/technologies-icons/next.webp">
             </div>
             <div id="card-technologie" class="d-flex justify-content-center align-items-center rounded">

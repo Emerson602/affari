@@ -75,6 +75,7 @@ return {
   animation: initial-animation-2 1s ease-in;
   animation-fill-mode: forwards;
   animation-delay: 2s;  
+  text-wrap: balance;
 }
 
 #presentation button {
