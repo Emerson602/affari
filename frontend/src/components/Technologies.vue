@@ -14,13 +14,22 @@
                 <img src="../assets/technologies-icons/javascript.webp">
             </div>
             <div id="card-technologie" class="d-flex justify-content-center align-items-center rounded">
-                <img src="../assets/technologies-icons/bootstrap.webp">
-            </div>
-            <div id="card-technologie" class="d-flex justify-content-center align-items-center rounded">
                 <img src="../assets/technologies-icons/typescript.webp">
             </div>
             <div id="card-technologie" class="d-flex justify-content-center align-items-center rounded">
+                <img src="../assets/technologies-icons/bootstrap.webp">
+            </div>
+            <div id="card-technologie" class="d-flex justify-content-center align-items-center rounded">
+                <img src="../assets/technologies-icons/tailwind.webp">
+            </div>
+            <div id="card-technologie" class="d-flex justify-content-center align-items-center rounded">
+                <img src="../assets/technologies-icons/sass.webp">
+            </div>
+            <div id="card-technologie" class="d-flex justify-content-center align-items-center rounded">
                 <img src="../assets/technologies-icons/vue.webp">
+            </div>
+            <div id="card-technologie" class="d-flex justify-content-center align-items-center rounded">
+                <img src="../assets/technologies-icons/nuxt.webp">
             </div>
             <div id="card-technologie" class="d-flex justify-content-center align-items-center rounded">
                 <img src="../assets/technologies-icons/react.webp">
@@ -38,13 +47,10 @@
                 <img src="../assets/technologies-icons/next.webp">
             </div>
             <div id="card-technologie" class="d-flex justify-content-center align-items-center rounded">
-                <img src="../assets/technologies-icons/nuxt.webp">
-            </div>
-            <div id="card-technologie" class="d-flex justify-content-center align-items-center rounded">
-                <img src="../assets/technologies-icons/sql.webp">
-            </div>
-            <div id="card-technologie" class="d-flex justify-content-center align-items-center rounded">
                 <img src="../assets/technologies-icons/node.webp">
+            </div>
+            <div id="card-technologie" class="d-flex justify-content-center align-items-center rounded">
+                <img src="../assets/technologies-icons/postgresql.webp">
             </div>
             <div id="card-technologie" class="d-flex justify-content-center align-items-center rounded">
                 <img src="../assets/technologies-icons/docker.webp">
