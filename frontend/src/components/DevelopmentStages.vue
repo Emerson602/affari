@@ -79,8 +79,8 @@ svg {
     height: 180px;
     margin: 10px;
     background-color: var(--lightolivegreen);        
-    box-shadow: 10px var(--black)
+    box-shadow: 10px var(--black);
+    text-wrap: balance;
 } 
-
 
 </style>
