@@ -62,7 +62,9 @@ export default {
 </script>
 
 <style scoped>
-
+h2 {
+  text-wrap: balance;
+}
 #info {
   background-color: var(--black);
   color: var(--white);
@@ -95,6 +97,7 @@ export default {
     height: auto;
     background-color: var(--black);
     margin: auto;
+    text-wrap: balance;
  }
 
  #cards-container div {
