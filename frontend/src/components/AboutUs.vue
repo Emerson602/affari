@@ -10,7 +10,7 @@
 
             <div class="d-flex flex-column flex-md-row justify-content-center align-items-center">
 
-                <img class="m-4" src="../assets/img-1.webp">     
+                <img class="m-4" src="../assets/img-1.webp" alt="imagem ilustrando a construção de uma pagina web" title="imagem da sessão sobre nós">     
 
                 <div id="text-container-1" class="d-flex align-items-center justify-content-center flex-column m-3 mt-md-0 mb-md-0 p-3 pt-5 rounded">
                     <p class="fs-4 text-start col-11">{{ $t('Home.info_1_txt') }}</p>

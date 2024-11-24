@@ -1,7 +1,7 @@
 <template>
     <div id="desktop-nav" class="d-none d-md-flex justify-content-between align-items">  
 
-        <img id="logo" :src="logo" class="m-md-5 mt-md-2 mb-md-2">
+        <img id="logo" :src="logo" alt="logomarca" class="m-md-5 mt-md-2 mb-md-2">
 
         <nav id="menu" class="d-md-flex justify-content-md-center align-items-md-center m-md-5 mt-md-0 mb-md-0 p-0 list-unstyled">
 

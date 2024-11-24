@@ -2,7 +2,8 @@
     <div class="d-md-none">
         <div id="mobile-nav" class="d-flex justify-content-between align-items">  
 
-            <img id="logo" :src="logo" class="m-3 mt-2 mb-2">
+            <img id="logo" :src="logo" alt="logomarca" class="m-3 mt-2 mb-2">
+            
             <button @click="toggleMenu" class="bg-transparent border-0 m-3 mt-0 mb-0" id="btn-menu"> 
                 <svg v-if="showBar" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
                   <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
