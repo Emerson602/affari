@@ -3,7 +3,11 @@
         <div id="presentation" class="d-flex flex-column">
             <div class="p-4 pt-0 pb-0 d-sm-flex flex-sm-row justify-content-center align-items-center">
                 <h1 id="title" class="text-start fs-1 m-sm-1 mt-0 mb-0">Affari</h1>
-                <h2 class="text-start fs-1 m-sm-1 mt-0 mb-0">development</h2>
+                <div class="d-flex flex-row">
+                  <h2 class="text-start fs-1 m-sm-0 mt-0 mb-0">dev</h2>
+                  <h2 v-if="visible" class="text-start fs-1 m-sm-0 mt-0 mb-0">elopment</h2>
+                </div>
+
             </div>        
             <p class="text-start text-sm-center mt-3 mt-md-5 fs-4 p-4 pt-0 pb-0">{{ $t('Home.slogan') }}</p> 
 
@@ -15,16 +19,23 @@
 </template>
 
 <script>
-
 export default {
-name: 'Slogan', 
-data() {
-return {
-    
-}
-},   
-}
+  name: "Slogan",
+
+  data() {
+    return {
+      visible: true
+    };
+  },
+
+  mounted() {
+    setTimeout(() => {
+      this.visible = false;
+    }, 5000);
+  }
+};
 </script>
+
 
 <style scoped>
 #home {
@@ -57,11 +68,20 @@ return {
   bottom: 15px;
  }
 
-#presentation h2 {
+#presentation h2:nth-child(1) {
   color: var(--white);
   opacity: 0;
   font-weight: normal !important;  
   animation: initial-animation-2 1s ease-in;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+
+#presentation h2:nth-child(2) {
+  color: var(--white);
+  opacity: 0;
+  font-weight: normal !important;  
+  animation: initial-animation-3 2s ease-in;
   animation-fill-mode: forwards;
   animation-delay: 1s;
 }
@@ -120,6 +140,18 @@ return {
   }
   100%{
     opacity: 1;   
+  }
+} 
+
+@keyframes initial-animation-3 {
+  0% {
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;   
+  }
+  100% {
+    opacity: 0;
   }
 } 
 

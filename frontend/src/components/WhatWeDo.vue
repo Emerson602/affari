@@ -49,10 +49,19 @@ name: 'WhatWeDo',
 data() {
 return {
     
-}
-},   
+}   
 
+},
+methods: {
+  scrollTopPage() {
+    const contactsContainer = document.querySelector('#what-we-do')
+    contactsContainer.scrollIntoView({ behavior: 'smooth' });              
+  },
+},
+mounted() {
+   this.scrollTopPage(); 
 }
+}  
 </script>
 
 <style scoped>

@@ -84,6 +84,7 @@ export default{
             contactsContainer.scrollIntoView({ behavior: 'smooth' });              
         },
     },
+
     mounted() {
        
     }
