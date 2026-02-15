@@ -49,7 +49,7 @@
                         <span>{{ $t('NavBar.products') }}</span>
                     </li>                   
                 </router-link> -->
-
+                <router-link to="/">
                 <div @click="scrollToAboutUs" class="fs-5 fw-bold">
                     <li  id="option" class="d-flex justify-content-start align-items-center border border-dark border-bottom-1 border-top-0 border-end-0 border-start-0">
                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-people m-3 mt-0 mb-0" viewBox="0 0 16 16">
@@ -58,8 +58,8 @@
 
                         <span>{{ $t('NavBar.about') }}</span>
                     </li>                   
-                </div>      
-
+                </div>          
+                </router-link>
                 <div @click="scrollToContacts" class="fs-5 fw-bold">
                     <li  id="option" class="d-flex justify-content-start align-items-center border-0">
                         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-wechat m-3 mt-0 mb-0" viewBox="0 0 16 16">
@@ -106,10 +106,15 @@ export default{
         });
         this.toggleMenu();
     },
-    scrollToAboutUs() {
-      const aboutUsContainer = document.querySelector('#curve-above')
-      aboutUsContainer.scrollIntoView({ behavior: 'smooth' });  
-      this.toggleMenu();
+    async scrollToAboutUs() {
+        await this.$router.push('/');     
+        await this.$nextTick();            
+        this.toggleMenu();
+        const aboutUsContainer = document.querySelector('#curve-above');
+
+        if (aboutUsContainer) {
+            aboutUsContainer.scrollIntoView({ behavior: 'smooth' });
+        }
     },
 
     scrollToContacts() {
