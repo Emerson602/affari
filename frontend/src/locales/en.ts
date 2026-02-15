@@ -26,7 +26,8 @@ export const en = {
     home: 'Home',   
     services: 'Services',
     products: 'Products',
-    contacts: 'Contacts'     
+    contacts: 'Contacts',
+    about: 'About us',     
    },
    Home: {
     slogan: `We transform ideas into websites, boosting your company online presence !`,

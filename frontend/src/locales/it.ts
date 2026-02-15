@@ -25,7 +25,8 @@ export const it = {
     home: 'Inizio',   
     services: 'Cosa facciamo',
     products: 'Prodotti',
-    contacts: 'Contatti'     
+    contacts: 'Contatti',
+    about: 'Chi siamo',     
   },
 
   Home: {

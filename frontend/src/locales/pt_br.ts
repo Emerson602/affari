@@ -25,6 +25,7 @@ export const pt_br = {
     services: 'Serviços',
     products: 'Produtos',
     contacts: 'Contatos',
+    about: 'Sobre nós',
   },
   Home: {
     slogan: 'Transformamos ideias em sites, impulsionando a presença online da sua empresa !',

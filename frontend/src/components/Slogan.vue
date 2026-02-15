@@ -31,7 +31,7 @@ export default {
   mounted() {
     setTimeout(() => {
       this.visible = false;
-    }, 5000);
+    }, 4500);
   }
 };
 </script>
@@ -81,7 +81,7 @@ export default {
   color: var(--white);
   opacity: 0;
   font-weight: normal !important;  
-  animation: initial-animation-3 2s ease-in;
+  animation: initial-animation-3 5s ease-in;
   animation-fill-mode: forwards;
   animation-delay: 1s;
 }
@@ -144,15 +144,22 @@ export default {
 } 
 
 @keyframes initial-animation-3 {
+  
   0% {
     opacity: 0;
   }
-  50%{
+  20%{
     opacity: 1;   
   }
-  100% {
-    opacity: 0;
+  55% {
+    opacity: 1;  
   }
-} 
+  60% {
+    opacity: 0;  
+  }
+  100% {
+    opacity: 0; 
+  }
+}  
 
 </style>
