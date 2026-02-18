@@ -35,7 +35,7 @@ export const pt_br = {
     info_1_title: `Somos uma agência especializada em
     desenvolvimento de sites`,  
 
-    info_1_txt: `A Affari Development é uma agência de desenvolvimento web fundada em 2024.`,
+    info_1_txt: `A Affari Dev é uma agência de desenvolvimento web criada em 2024.`,
 
     info_2_txt: `Somos especializados no desenvolvimento de sites institucionais.`,
 
@@ -103,7 +103,7 @@ export const pt_br = {
     support_txt: 'Oferecemos suporte durante a hospedagem do seu site.',
     stage_tittle: 'Crie sua presença online',
     stage_txt: `Sua identidade é única, e seu site deve representar isso.
-     Na Affari Development, nossa equipe especializada se dedica a transformar
+     Na Affari Dev, nossa equipe especializada se dedica a transformar
       sua visão digital em realidade. Oferecemos soluções personalizadas que
        elevam sua marca a um novo patamar`,
     stages: 'Etapas',

@@ -35,7 +35,7 @@ export const en = {
 
     info_1_title: `We are specialists in website development`, 
 
-    info_1_txt: `Affari Development is a web development agency founded in 2024.`,
+    info_1_txt: `Affari Dev is a web development agency founded in 2024.`,
 
     info_2_txt: `We specialize in the development of institutional websites.`,
 
@@ -103,7 +103,7 @@ export const en = {
 
     stage_tittle: 'Create your online presence.',
     stage_txt: `Your identity is unique, and your website should reflect that.
-     At Affari Development, our specialized team is dedicated to turning your
+     At Affari Dev, our specialized team is dedicated to turning your
       digital vision into reality. We offer personalized solutions that elevate
        your brand to a new level.`,
     stages: 'Stages',

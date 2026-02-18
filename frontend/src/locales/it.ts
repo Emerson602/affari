@@ -37,7 +37,7 @@ export const it = {
     info_1_title: `Siamo specialisti nello
     sviluppo di siti web`,  
 
-    info_1_txt: `Affari Development è una agenzia di sviluppo web fondata nel 2024.`,
+    info_1_txt: `Affari Dev è una agenzia di sviluppo web fondata nel 2024.`,
 
     info_2_txt: `Siamo specializzati nello sviluppo di siti web istituzionali.`,
 
@@ -105,7 +105,7 @@ export const it = {
 
     stage_tittle: 'Crea la tua presenza online.',
     stage_txt: `La tua identità è unica e il tuo sito web dovrebbe rappresentarla.
-    Alla Affari Development, il nostro team specializzato si dedica a trasformare
+    Alla Affari Dev, il nostro team specializzato si dedica a trasformare
     la tua visione digitale in realtà. Offriamo soluzioni personalizzate che
     elevano il tuo marchio a un nuovo livello.`,
     stages: 'Fasi',
