@@ -34,6 +34,7 @@
             <span class="fs-2 mt-5">{{ $t('Home.fill_the_form') }}</span>
     
             <form @submit.prevent="submitForm" id="form" class="col-10 col-md-9 col-lg-7 pt-5">
+
                 <div class="d-flex flex-column flex-md-row align-items-center col-12" id="double-fields">
                     <div class="mt-4 col text-start fs-5">
                         <label for="name">{{ $t('Home.name') }}</label>
@@ -149,7 +150,7 @@
         }     
     },
     mounted() {        
-
+        
     },  
     }
     </script>

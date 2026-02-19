@@ -147,6 +147,11 @@ export default{
         height: 80px;
     }
 
+    
+    #logo:focus {
+      outline: none;
+    }
+
     #menu {        
         position: fixed;
         top: 260px;

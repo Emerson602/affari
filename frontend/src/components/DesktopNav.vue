@@ -145,6 +145,10 @@ export default{
         height: 80px;
     }
 
+    #logo:focus {
+      outline: none;
+    }
+
     #menu nav {        
         background-color: var(--black);
         color: var(--darkolivegreen);         

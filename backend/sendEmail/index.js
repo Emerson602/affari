@@ -29,7 +29,7 @@ transporter.verify(function(error, success) {
 app.post('/send-email', (req, res) => {
     const { email, name, phone, message } = req.body;
   
-    console.log('Data received:', { email, name, phone, message });   
+    console.log('Data received:', { email, name, phone, message }); 
   
     const mailOptionsToSelf = {
       from: process.env.EMAIL_USER,
